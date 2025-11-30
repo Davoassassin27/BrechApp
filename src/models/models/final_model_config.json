@@ -1,0 +1,11 @@
+{
+    "best_model": "LightGBM",
+    "metrics": {
+        "mae": 341.98669330159845,
+        "rmse": 455.7069244081179,
+        "mape": 41.880008892125325
+    },
+    "ensemble_type": null,
+    "weights": null,
+    "meta_model": null
+}

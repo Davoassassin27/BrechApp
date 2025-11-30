@@ -19,6 +19,9 @@ jupyter
 statsmodels
 prophet
 arch
+lighgbm
+tensorflow
+scikit-learn
 
 # API
 fastapi
