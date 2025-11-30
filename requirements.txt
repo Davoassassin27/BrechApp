@@ -1,7 +1,34 @@
+# Data Processing
 pandas
-requests
-matplotlib
-seaborn
-jupyter
 polars
 pyarrow
+numpy
+
+# Data Ingestion
+requests
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Jupyter
+jupyter
+
+# Time Series Models
+statsmodels
+prophet
+arch
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Frontend
+streamlit
+
+# Testing
+pytest
+pytest-cov
+httpx
