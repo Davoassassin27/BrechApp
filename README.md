@@ -1,16 +1,21 @@
-# BrechApp 🚀
+# BrechApp 🇦🇷💵
 
 <img src="assets/images/logo.png" alt="BrechApp Logo" width="150" height="auto">
 
-**BrechApp** es una plataforma completa para el análisis de criptomonedas con predicción de precios, análisis de volatilidad y detección de brechas.
+**BrechApp** es una plataforma completa para el análisis y predicción del mercado cambiario argentino, especializada en el seguimiento de la brecha cambiaria y predicción del dólar en sus diferentes modalidades (oficial, blue, MEP, CCL).
+
+## 🌐 Aplicación en Vivo
+
+**🚀 Accede a la aplicación:** [https://brechapp.streamlit.app/](https://brechapp.streamlit.app/)
 
 ## 📋 Descripción
 
-Este proyecto integra modelos de series temporales (ARIMA, Prophet, GARCH) con una API REST y una interfaz web interactiva para:
-- Predicción de precios de criptomonedas
-- Análisis de volatilidad
-- Visualización de datos históricos
-- Detección de brechas y anomalías
+Este proyecto integra modelos de series temporales (ARIMA, LightGBM, Ensemble) con una interfaz web interactiva para:
+- Monitoreo en tiempo real de cotizaciones del dólar argentino
+- Predicción de precios del dólar blue
+- Análisis de volatilidad y spreads cambiarios
+- Visualización de datos históricos y tendencias
+- Comparación entre diferentes tipos de cambio
 
 ## 🏗️ Estructura del Proyecto
 
@@ -181,11 +186,25 @@ git push -u origin feature/mi-feature
 
 ## 🛠️ Tecnologías
 
-- **Data Processing**: Pandas, Polars, NumPy
-- **ML Models**: Statsmodels, Prophet, ARCH
+- **Data Processing**: Pandas, Polars, NumPy, PyArrow
+- **ML Models**: Statsmodels (ARIMA), LightGBM, Prophet, ARCH (GARCH)
+- **Ensemble Methods**: Weighted Average, Stacking
 - **API**: FastAPI, Uvicorn, Pydantic
 - **Frontend**: Streamlit, Plotly
+- **Data Source**: DolarAPI (https://dolarapi.com/)
 - **Testing**: Pytest
+- **Deployment**: Streamlit Cloud
+
+## 📊 Modelos Implementados
+
+### Modelos Base
+- **ARIMA**: Modelo autorregresivo integrado de medias móviles para series temporales
+- **LightGBM**: Gradient Boosting optimizado para predicción de precios
+- **GARCH**: Modelado de volatilidad condicional
+
+### Ensemble
+- **Weighted Average**: Combinación ponderada de predicciones
+- **Stacking**: Meta-modelo que aprende de las predicciones base
 
 ## 📝 Notas
 
@@ -208,4 +227,12 @@ Este proyecto es de código abierto.
 
 ## 👥 Autor
 
-Desarrollado por Davoassassin27
+**David Soler**
+Desarrollador y Data Scientist
+Proyecto académico - UCASAL 2025
+
+## 📚 Documentación Adicional
+
+- [Plan de Modelado](docs/MODEL_PLAN.md)
+- [Informe Ejecutivo](docs/Informe_BrechApp_MyS.md)
+- [Notebooks de Análisis](notebooks/)
