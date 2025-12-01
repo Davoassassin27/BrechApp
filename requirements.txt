@@ -19,8 +19,7 @@ jupyter
 statsmodels
 prophet
 arch
-lighgbm
-tensorflow
+lightgbm
 scikit-learn
 
 # API
@@ -34,4 +33,6 @@ streamlit
 # Testing
 pytest
 pytest-cov
-httpx
+
+# Utils
+python-dotenv
